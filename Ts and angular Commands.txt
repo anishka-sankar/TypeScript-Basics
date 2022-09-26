@@ -1,0 +1,36 @@
+---ANgular set up for windows
+
+https://github.com/darbyluv2code/fullstack-angular-and-springboot/blob/master/install-angular-tools/ms-windows/install-ms-windows.md
+
+For transpiling/compiling
+--> tsc demo.ts  (converts ts --> js)
+For running 
+--> node demo.js  
+
+For telling not to compile the ts file if there is any compilation error. 
+By default the .ts file will be compiled and executed using node even if there is any compilation error.
+--> tsc --noEmitOnError demo.ts 
+
+
+The get/set accessors features is only available in ES5 or >.
+You have to set a compiler flag in order to compile the code.
+--> tsc --target ES5 demo.ts
+
+Use tsconfig.json for defining compiler flags
+-generating tempalte for it
+--> tsc --init
+-edit it according to our requirements.
+
+TS supports single inheritance but multiple interfaces.
+
+--> ng serve --open (automatically opens web browser to http://localhost:4200)
+
+Required installation check for angular project
+
+--> npm --version
+--> node --version
+--> ng --version(for cli)
+
+for creating a ts class in angular project 
+
+--> ng g class <className> 
